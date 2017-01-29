@@ -1,0 +1,270 @@
+﻿body {
+    margin: 0px;
+    background-color: #456a97;
+
+} 
+a {
+    font-family:"微软雅黑", "宋体", "Arial";
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    font-family:"微软雅黑", "宋体", "Arial";
+    font-size: 12px;
+    color: #c8ddea;
+    text-decoration: none;
+}	  
+.ms-globallinks{
+    font-family:"微软雅黑", "宋体", "Arial";
+    font-size: 11px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+a.ms-globallinks{
+    font-size: 12px;
+    color: #333333;
+    text-decoration: none;
+    font-family:"微软雅黑", "宋体", "Arial";
+
+}
+a.ms-globallinks:hover {
+    color: #333333;
+    text-decoration: underline;
+    font-size: 12px;
+    font-family:"微软雅黑", "宋体", "Arial";
+}
+.list-row-icon{
+    background-image: url(/themes/images/icon0.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 20px;
+}
+.list-row-icon1{
+    background-image: url(/themes/images/icon1.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 20px;	
+}
+.list-seprow{
+    background-image: url(/themes/images/menu_line.gif);
+    background-repeat: repeat;
+    height: 2px;		
+
+}
+.list-title {
+    font-family:"微软雅黑", "宋体", "Arial";
+    font-size: 12px;
+    font-weight: bold;
+    color: #333333;
+
+}
+.top_logo { 
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 615px;	
+}
+.top_rightbg {
+    background-image: url(themes/images/top_rightbg.jpg);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 387px;	
+}
+.main-right {
+    background-color: #FFFFFF; 
+    height:700px;
+}	
+.select/*ÏÂÀ­Ñ¡Ôñ*/ { 
+   border-width: 1px; 
+   PADDING: 1px; 
+   background-color: #ffffff;  
+   font-family:"微软雅黑", "宋体", "Arial";
+   font-size: 12px; 
+
+}
+
+.selected/*ÏÂÀ­Ñ¡Ôñ*/ { 
+   border-width: 1px; 
+   PADDING: 1px; 
+   background-color: #ffffff;  
+   font-family:"微软雅黑", "宋体", "Arial";
+}
+
+.bot-font {
+    font-family:"微软雅黑", "宋体", "Arial";
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.bot_bg{
+    background-image: url(themes/images/bot_bg.jpg);
+    background-repeat: repeat-x;
+    height: 26px;
+}
+.barnner_bg {
+    background-image: url(themes/images/barner_bg.jpg);
+    background-repeat: repeat-x;
+    height: 24px;
+    font-family:"微软雅黑", "宋体", "Arial";
+    font-size: 12px;
+    color: #FFFFFF;
+} 
+.input/*µ¥ÐÐÎÄ±¾ÊäÈë*/
+{
+    PADDING: 1px;
+    background-color: #fff;
+    font-family:"微软雅黑", "宋体", "Arial";
+    font-size: 12px;
+    border: 1px solid #7f9db9;
+
+}
+.border
+{
+    border: 1px solid #99c6ff;
+}
+.buttonbg {
+    background-image: url(themes/images/button_bg.jpg);
+    height: 20px;
+    width: 80px;
+    font-family:"微软雅黑", "宋体", "Arial";
+    font-size: 12px;
+    color: #333333;
+    background-repeat: no-repeat;
+    border: 1px none #003c74;
+}
+.form_title{
+    border:1px solid #cacfcd;
+    height: 20px;
+    font-family:"微软雅黑", "宋体", "Arial";
+    font-size: 12px;
+    color: #333333;
+    font-weight: bold;
+    background-image: url(themes/images/form_titlebg.jpg);
+    background-repeat:repeat;
+    text-align: center;
+    background-color:#f5f5f5;
+}	 	 
+.table_stroke1 {
+    border-collapse: collapse;
+}
+.form-label{
+    background:#e1e6fe;
+    border:1px solid #cacfcd;
+    height: 20px;
+    font-family:"微软雅黑", "宋体", "Arial";
+    font-size: 12px;
+    color: #333333;
+    text-align: center;
+}
+.form-body{
+    background:#fff;
+    border:1px solid #cacfcd;
+    height: 20px;
+    font-family:"微软雅黑", "宋体", "Arial";
+    font-size: 12px;
+    color: #333333;
+    text-align: center;
+}
+.font_title{
+    background:#5865cb;
+    font-family:"微软雅黑", "宋体", "Arial";
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    height: 22px;
+    padding-left: 6px;
+}
+td {
+    font-family:"微软雅黑", "宋体", "Arial";
+    font-size: 12px;
+}
+
+.GridHoverColor
+{
+    background-color:#dceeff;
+}
+
+.gridtb
+{
+    border-bottom-style:outset;
+    border-bottom-width:1px;
+    border-right-style:outset;
+    border-right-width:1px;
+}
+.display-label, 
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field, 
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box {
+    width: 30em;
+}
+
+.text-box.multi-line {
+    height: 6.5em;
+}
+
+.tri-state {
+    width: 6em;
+} 
+#menu-container { 
+    width: 182px; background: #f9fafb url(/Themes/images/index_menu_bg.gif);font-family:"微软雅黑", "宋体", "Arial";
+    font-size:12px;
+} 
+
+
+#menu-container .menu-tit 
+{ 
+    margin: 0px; width: 182px; height: 30px; cursor: pointer; line-height: 30px; text-align: center; color: #000; 
+    background:   url(/Themes/images/index_menu_tit.gif) no-repeat; font-size:17px;
+}
+#menu-container .menu-list
+{ 
+    width: 182px; height: auto;
+}
+#menu-container .menu-list .top-line
+{ 
+    width: 182px; height: 5px; background:url(/Themes/images/index_menu_line.gif) no-repeat;
+}
+#menu-container .menu-list .nav-items 
+{ 
+    margin: 0px; padding: 0px; width: 182px;
+}
+#menu-container .menu-list .nav-items ul 
+{ 
+    margin: 0px; padding: 0px; display: block; list-style-type: none;
+}
+#menu-container .menu-list .nav-items li 
+{ 
+    padding-left: 0px; width: 182px; height: 26px; line-height: 26px; color: #333333; display: block; text-decoration: none; 
+    list-style-type: none;
+}
+#menu-container .menu-list .nav-items a:link 
+{ 
+    margin: 0px; padding: 0px; width: 182px; height: 26px; line-height: 26px; overflow: hidden; color: #333333; display: block; 
+    text-align: center; text-decoration: none; background: url(/themes/images/index_menu_off.gif) no-repeat;
+}
+#menu-container .menu-list .nav-items a:visited 
+{ 
+    margin: 0px; padding: 0px; width: 182px; height: 26px; line-height: 26px; color: #333333; display: block; text-align: center; 
+    text-decoration: none; background-image: url(/themes/images/index_menu_off.gif) no-repeat;
+}
+#menu-container .menu-list .nav-items a:active 
+{ 
+    margin: 0px; padding: 0px; width: 182px; height: 26px; line-height: 26px; overflow: hidden; color: #333333; display: block; 
+    text-align: center; text-decoration: none; background: url(/themes/images/index_menu_off.gif) no-repeat;
+}
+#menu-container .menu-list .nav-items a:hover 
+{ 
+    margin: 0px; padding: 0px; width: 182px; height: 26px; line-height: 26px; font-weight: bold; color: #588600; 
+    text-align: center; display: block; text-decoration: none; background: url(/themes/images/index_menu_on.gif) no-repeat;
+}
+#menu-bottom
+{ 
+    width: 182px; height:3px; background:url(/themes/images/index_menu_bottom.gif);
+}  

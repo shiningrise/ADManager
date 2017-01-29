@@ -1,0 +1,21 @@
+﻿table.gridview_fh td, th
+{
+    border-collapse: collapse;
+    border: solid 1px #93c2f1;
+    font-size: 10pt;
+}
+table.gridview_fh
+{
+    border-collapse: collapse;
+    border: solid 1px #93c2f1;
+    width: 98%;
+    font-size: 10pt;
+}
+        
+table.gridview_fh td, th
+{
+    border-collapse: collapse;
+    border: solid 1px #93c2f1;
+    font-size: 10pt;
+}
+ 

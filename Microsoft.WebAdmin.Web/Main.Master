@@ -1,0 +1,176 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Microsoft.WebAdmin.Web.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>微软目录管理系统</title>
+    <link href="Themes/CSS/theme.css" rel="stylesheet" type="text/css" /> 
+    <link href="Themes/CSS/cust.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+// <![CDATA[
+
+        function img1_onclick() {
+
+        }
+
+// ]]>
+    </script>
+</head>
+<body>
+   <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <table border="0" align="center" cellpadding="0" cellspacing="0" style="height: 5%;
+        width: 95%;">
+        <tr>
+            <td class="top_logo">
+                &nbsp;
+            </td>
+            <td align="right" valign="top" class="top_rightbg">
+                <table border="0" cellspacing="6" cellpadding="2">
+                    <tr>
+                        <td>
+                            <a href='index.aspx'>
+                                <img id="img1" src="~/Themes/images/home_button.gif" runat="server" width="74" height="20"
+                                    border="0" onclick="return img1_onclick()" /></a>
+                        </td>
+                        <td width="100"> 
+                            <asp:ImageButton ID="imgExit" runat="server"  
+                                ImageUrl="~/Themes/images/exit_button.gif" onclick="imgExit_Click" /> 
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table border="0" align="center" cellpadding="0" cellspacing="0" style="height: 90%;width: 95%;">
+        <tr style="height: 90%; color: #e6dee3;">
+            <td>
+            </td>
+            <td style="font-family: 微软雅黑; font-size: 13px;">
+                <asp:Literal ID="litDate" runat="server"></asp:Literal>
+            </td>
+        </tr>
+        <tr style="height: 5px;">
+        </tr>
+        <tr style="height: 90%;">
+            <td valign="top" style="width: 210px; text-align: left;">
+                <div id="main">
+                    <div id="left">
+                        <div id="menu-container">
+                            <div class="menu-tit" style="display:<%= IsAdmin %>">账号管理</div>
+                            <div class="menu-list"  style="display:<%= IsAdmin %>">
+                                <div class="top-line">
+                                </div>
+                                <ul class="nav-items">
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>ApplyAccount.aspx">创建AD账号</a></li>
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>ApplyMail.aspx">创建邮箱</a></li> 
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>DelADAccount.aspx">删除AD账号</a></li>
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>DelMail.aspx">删除邮箱</a></li> 
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>ChangeUserInfo.aspx">更新用户信息</a></li>
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>UnlockBatch.aspx">账号解锁</a></li>
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>ResetPassword.aspx">密码重置</a></li>
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>OUManage.aspx">OU变更</a></li> 
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>UserInfoReport.aspx">用户信息导出</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-tit" style="display:<%= IsAdmin %>">基础信息管理</div>
+                            <div class="menu-list"  style="display:<%= IsAdmin %>">
+                                <div class="top-line">
+                                </div>
+                                <ul class="nav-items">
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>DicManage/Dic_Company.aspx">公司类型</a></li>
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>DicManage/Dic_AccountType.aspx">账号类型</a></li>  
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>DicManage/Dic_Deptment.aspx">部门类型</a></li>  
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>DicManage/Dic_MailPostFix.aspx">邮箱类型</a></li>  
+                                </ul>
+                            </div>
+                            <div class="menu-tit">员工自助服务</div>
+                            <div class="menu-list">
+                                <div class="top-line">
+                                </div>
+                                <ul class="nav-items">
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>UserInformation.aspx">用户信息查询</a></li>
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>UpdateSelfInfo.aspx">更新个人信息</a></li>
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>ChangePwd.aspx">密码修改</a></li>
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>LoginQuestion.aspx?s=u">设置问题(忘记密码进入)</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-tit"  style="display:<%= IsBondManAdmin %>">担保人服务</div>
+                            <div class="menu-list"  style="display:<%= IsBondManAdmin %>">
+                                <div class="top-line">
+                                </div>
+                                <ul class="nav-items">
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>viewBondMan.aspx">被担保人管理</a></li>
+                                </ul>
+                            </div>
+                             <div class="menu-tit"  style="display:<%= IsHR %>">人事关系管理</div>
+                            <div class="menu-list"  style="display:<%= IsHR %>">
+                                <div class="top-line">
+                                </div>
+                                <ul class="nav-items">
+                                    <li><a href="<%= Page.ResolveClientUrl("~")%>ChangeUserInfoHR.aspx">汇报关系更新</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </td>
+            <td align="center" valign="top" class="main-right">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="center">
+                            <table width="95%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                            <ContentTemplate>
+                                                <asp:ContentPlaceHolder ID="MainContentPlace" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                                <asp:UpdateProgress ID="UpdateProgress1" runat="server">
+                                                    <ProgressTemplate>
+                                                        <div style="filter: alpha(opacity=50); background-color: Gray; position: absolute;
+                                                            top: 0px; left: 0px; width: 100%; height: 200%; z-index: 999">
+                                                        </div>
+                                                        <div style="position: absolute; width: 100%; top: 0px; left: 0px; height: 100%; text-align: center;
+                                                            z-index: 1000">
+                                                            <div style="width: 100%; height: 100%">
+                                                                <table style="height: 100%; width: 100%;" border="0" align="center" cellpadding="0"
+                                                                    cellspacing="0" class="INPUTAREA">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="imageLoading" runat="server" ImageUrl="~/Themes/images/loading.gif" />
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </ProgressTemplate>
+                                                </asp:UpdateProgress>
+                                            </ContentTemplate> 
+                                        </asp:UpdatePanel>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" style="height: 5%;">
+        <tr>
+            <td class="bot_bg">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="bot-font">
+                            微软版权所有 
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

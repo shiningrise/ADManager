@@ -1,0 +1,127 @@
+﻿.tab_toolbar
+{
+	width: 100%;
+	margin: 3px;
+	padding: 3px;
+}
+
+
+/*- Div changebg--------------------------- */
+
+#tabs10
+{
+	float: right;
+	width: 100%;
+	font-size: 12px;
+	line-height: normal;
+	margin-right:5px;
+}
+#tabs10 ul
+{
+	margin: 0;
+	padding: 0px 2px 0 2px;
+	list-style: none;
+}
+/*    #tabs11 li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }*/
+#tabs10 li
+{
+	float: right;
+	margin: 0;
+	padding: 2 0 2 4px;
+	display: block;
+	text-decoration: none;
+}
+#tabs10 a
+{
+	float: right;
+	background: url( "../Themes/images/img_toolbar/1.gif" ) no-repeat left top;
+	margin: 0;
+	padding: 0 0 0 4px;
+	display: block;
+	text-decoration: none;
+}
+#tabs10 a span
+{
+	float: right;
+	display: block;
+	background: url( "../Themes/images/img_toolbar/2.gif" ) no-repeat right top;
+	padding: 2px 4px 2px 1px;
+	color: #15418A;
+}
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs10 a span
+{
+	float: none;
+}	
+#tabs10 a:hover
+{
+	background-position: 0% -20px;
+}
+#tabs10 a:hover span
+{
+	background-position: 100% -20px;
+}
+
+
+/*- Div changebg2--------------------------- */
+
+#tabs11
+{
+	float: left;
+	width: 100%;
+	font-size: 12px;
+	line-height: normal;
+}
+#tabs11 ul
+{
+	margin: 0;
+	padding: 0px 2px 0 2px;
+	list-style: none;
+}
+/*    #tabs11 li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }*/
+#tabs11 li
+{
+	float: left;
+	margin: 0;
+	padding: 2 0 2 4px;
+	display: block;
+	text-decoration: none;
+}
+#tabs11 a
+{
+	float: left;
+	background: url( "../Themes/images/img_toolbar/1.gif" ) no-repeat left top;
+	margin: 0;
+	padding: 0 0 0 4px;
+	display: block;
+	text-decoration: none;
+}
+#tabs11 a span
+{
+	float: right;
+	display: block;
+	background: url( "../Themes/images/img_toolbar/2.gif" ) no-repeat right top;
+	padding: 2px 4px 2px 1px;
+	color: #15418A;
+}
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs11 a span
+{
+	float: none;
+}	
+#tabs11 a:hover
+{
+	background-position: 0% -20px;
+}
+#tabs11 a:hover span
+{
+	background-position: 100% -20px;
+}

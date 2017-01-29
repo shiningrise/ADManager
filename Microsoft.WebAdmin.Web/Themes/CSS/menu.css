@@ -1,0 +1,49 @@
+﻿.css_one_tab
+{
+    width :750px;
+    height :20px;
+    text-align :left ;
+}
+
+.css_menu
+{
+    width :200px;
+    height :20px;
+}
+.css_menu_item
+{
+    color: #000000;
+    text-align: center;
+    width: 100px;
+    border: 1px solid #c6dad8;
+    font-family: 微软雅黑, 宋体, Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+.css_menu_item_select
+{
+    background-color: #c6dad8;
+    border: 1px solid #c6dad8;
+    color: #FFFFFF;
+}
+.css_menu_item_hover
+{
+    color :#205AA7;
+    font-weight :bold ;
+}
+
+
+.css_view
+{
+    background-color: #c6dad8;
+    width: 750px;
+    height: 100%;
+    overflow: auto;
+    padding :5px;
+} 
+.css_view_content
+{
+    font-family: 微软雅黑, 宋体, Arial, Helvetica, sans-serif;
+    color : #000000;
+	font-size : 9pt;
+	text-align : left;
+}
